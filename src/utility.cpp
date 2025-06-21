@@ -40,7 +40,7 @@ bool isDouble(const std::string &s) {
     }
     ++i;
   }
-  return true;
+  return dotdetect;
 }
 
 bool isInteger(const std::string &s) {

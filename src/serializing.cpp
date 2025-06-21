@@ -6,8 +6,13 @@ std::string stringify(const JSON &node) {
     return node._value._bool ? "true" : "false";
   case JSONType::NULLT:
     return "null";
-  case JSONType::NUMBER:
-    return std::to_string(node._value._number);
+  case JSONType::NUMBER: {
+    if (node._value._numbertype == 1) {
+      return std::to_string(node._value._dnumber);
+    } else if (node._value._numbertype == 2) {
+      return std::to_string(node._value._inumber);
+    }
+  }
 
   case JSONType::STRING: {
     std::string ans = "\"";

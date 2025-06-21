@@ -17,14 +17,16 @@ public:
 
   struct value { // 如果是value，则使用联合体存储其值
     std::string _string;
-    double _number;
+    double _dnumber; //_numbertype = 1
+    int _inumber;    //_numbertype = 2
     bool _bool;
+    int _numbertype = 0;
     value() {}
     ~value() {}
 
     operator std::string() { return _string; }
-    operator double() { return _number; }
-    operator int() { return _number; }
+    operator double() { return _dnumber; }
+    operator int() { return _inumber; }
     operator bool() { return _bool; }
   } _value;
 
@@ -53,8 +55,14 @@ public:
   JSONNode(const char *value) : _type(JSONType::STRING) {
     _value._string = value;
   }
-  JSONNode(double value) : _type(JSONType::NUMBER) { _value._number = value; }
-  JSONNode(int value) : _type(JSONType::NUMBER) { _value._number = value; }
+  JSONNode(double value) : _type(JSONType::NUMBER) {
+    _value._dnumber = value;
+    _value._numbertype = 1;
+  }
+  JSONNode(int value) : _type(JSONType::NUMBER) {
+    _value._inumber = value;
+    _value._numbertype = 2;
+  }
   JSONNode(bool value) : _type(JSONType::BOOL) { _value._bool = value; }
   JSONNode(const std::vector<JSONNode> &nodes)
       : _type(JSONType::ARRAY), _array(nodes) {}
@@ -65,7 +73,9 @@ public:
     _data = node._data;
     _array = node._array;
     _value._string = node._value._string;
-    _value._number = node._value._number;
+    _value._dnumber = node._value._dnumber;
+    _value._inumber = node._value._inumber;
+    _value._numbertype = node._value._numbertype;
     _value._bool = node._value._bool;
   }
 
@@ -75,7 +85,9 @@ public:
     _data = node._data;
     _array = node._array;
     _value._string = node._value._string;
-    _value._number = node._value._number;
+    _value._dnumber = node._value._dnumber;
+    _value._inumber = node._value._inumber;
+    _value._numbertype = node._value._numbertype;
     _value._bool = node._value._bool;
     return *this;
   }
@@ -114,8 +126,8 @@ public:
   }
 
   operator std::string() { return _value._string; }
-  operator double() { return _value._number; }
-  operator int() { return _value._number; }
+  operator double() { return _value._dnumber; }
+  operator int() { return _value._inumber; }
   operator bool() { return _value._bool; }
 };
 
