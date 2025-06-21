@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/Users/iamnidhogg/Desktop/MyJson/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/iamnidhogg/Desktop/MyJson/include -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -o CMakeFiles/myjson.dir/src/main.cpp.o -c /Users/iamnidhogg/Desktop/MyJson/src/main.cpp",
+  "file": "/Users/iamnidhogg/Desktop/MyJson/src/main.cpp",
+  "output": "CMakeFiles/myjson.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/iamnidhogg/Desktop/MyJson/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/iamnidhogg/Desktop/MyJson/include -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -o CMakeFiles/myjson.dir/src/parsejson.cpp.o -c /Users/iamnidhogg/Desktop/MyJson/src/parsejson.cpp",
+  "file": "/Users/iamnidhogg/Desktop/MyJson/src/parsejson.cpp",
+  "output": "CMakeFiles/myjson.dir/src/parsejson.cpp.o"
+},
+{
+  "directory": "/Users/iamnidhogg/Desktop/MyJson/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/iamnidhogg/Desktop/MyJson/include -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -o CMakeFiles/myjson.dir/src/serializing.cpp.o -c /Users/iamnidhogg/Desktop/MyJson/src/serializing.cpp",
+  "file": "/Users/iamnidhogg/Desktop/MyJson/src/serializing.cpp",
+  "output": "CMakeFiles/myjson.dir/src/serializing.cpp.o"
+},
+{
+  "directory": "/Users/iamnidhogg/Desktop/MyJson/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/iamnidhogg/Desktop/MyJson/include -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -o CMakeFiles/myjson.dir/src/utility.cpp.o -c /Users/iamnidhogg/Desktop/MyJson/src/utility.cpp",
+  "file": "/Users/iamnidhogg/Desktop/MyJson/src/utility.cpp",
+  "output": "CMakeFiles/myjson.dir/src/utility.cpp.o"
+}
+]

@@ -1,0 +1,3 @@
+/Users/iamnidhogg/Desktop/MyJson/build/CMakeFiles/myjson.dir
+/Users/iamnidhogg/Desktop/MyJson/build/CMakeFiles/edit_cache.dir
+/Users/iamnidhogg/Desktop/MyJson/build/CMakeFiles/rebuild_cache.dir
