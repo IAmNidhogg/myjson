@@ -15,6 +15,6 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/lib)
 
 link_directories(${PROJECT_SOURCE_DIR}/build/lib)
 
-add_executable(myjson ${HPP} ${PROJECT_SOURCE_DIR}/demo/main.cpp)
+add_executable(demo ${PROJECT_SOURCE_DIR}/demo/main.cpp)
 
-target_link_libraries(myjson libjson.a)
+target_link_libraries(demo libjson.a)
